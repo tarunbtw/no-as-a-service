@@ -1,0 +1,10 @@
+# binary output
+naas
+naas.exe
+
+# env files
+.env
+
+# ide
+.vscode/
+.idea/
