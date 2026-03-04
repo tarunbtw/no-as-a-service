@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-//embeds reasons.json (go:embed)
+//go:embed reasons.json
 var reasonsFile []byte
 
 var reasons []string
