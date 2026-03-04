@@ -1,6 +1,7 @@
 # binary output
 naas
 naas.exe
+app.exe 
 
 # env files
 .env
