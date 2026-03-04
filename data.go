@@ -9,6 +9,9 @@ import (
 //go:embed reasons.json
 var reasonsFile []byte
 
+//go:embed index.html
+var indexHTML []byte
+
 var reasons []string
 
 func loadReasons() {

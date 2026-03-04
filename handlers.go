@@ -19,6 +19,11 @@ type HealthResponse struct {
 
 var startTime = time.Now()
 
+func indexHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "text/html")
+	w.Write(indexHTML)
+}
+
 func noHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet {
 		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)

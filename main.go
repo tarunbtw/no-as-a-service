@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -16,9 +15,7 @@ func main() {
 		port = "8080"
 	}
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintln(w, "no-as-a-service is running")
-	})
+	http.HandleFunc("/", loggingMiddleware(indexHandler))
 	http.HandleFunc("/no", loggingMiddleware(rateLimitMiddleware(noHandler)))
 	http.HandleFunc("/health", loggingMiddleware(healthHandler))
 
