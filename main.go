@@ -18,6 +18,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "no-as-a-service is running")
 	})
+	http.HandleFunc("/no", noHandler)
 
 	log.Printf("server starting on port %s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
