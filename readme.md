@@ -13,7 +13,7 @@ https://yourdomain.com
 ```
 
 **Method:** `GET`
-**Rate Limit:** `10 requests per burst per IP`
+**Rate Limit:** `150 requests per burst per IP`
 
 ### Example Request
 ```bash
