@@ -20,6 +20,7 @@ func main() {
 		fmt.Fprintln(w, "no-as-a-service is running")
 	})
 	http.HandleFunc("/no", rateLimitMiddleware(noHandler))
+	http.HandleFunc("/health", healthHandler)
 
 	log.Printf("server starting on port %s", port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
