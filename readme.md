@@ -9,7 +9,7 @@ Built in Go — zero runtime dependencies, single binary, microsecond latency.
 
 **Base URL**
 ```
-https://yourdomain.com
+https://no-as-a-service-5fv3.onrender.com
 ```
 
 **Method:** `GET`
