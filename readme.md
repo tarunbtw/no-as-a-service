@@ -61,7 +61,7 @@ docker run -p 8080:8080 no-as-a-service
 
 ---
 
-## 📁 Project Structure
+## 📁 File Structure
 ```
 no-as-a-service/
 ├── main.go          
